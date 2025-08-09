@@ -1,6 +1,5 @@
 # Expense Tracker (Java Console App)
 
-## What is this?
 A simple Java console application to record personal expenses.  
 Features:
 - Add expense (date, category, amount)
@@ -33,59 +32,6 @@ Example:
 
 ---
 
-## Run instructions (Command-line)
 
-### Requirements
-- JDK installed (javac & java available)
-- Current directory set to the folder containing `ExpenseTracker.java`
 
-### Compile
-```bash
-javac ExpenseTracker.java
-```
 
-This produces `ExpenseTracker.class`.
-
-### Run
-```bash
-java ExpenseTracker
-```
-
-You will see a menu. Enter choices as numbers (1,2,3,4) and follow prompts.
-
----
-
-## Create runnable JAR (optional)
-1. Compile:
-```bash
-javac ExpenseTracker.java
-```
-2. Create a manifest file `manifest.txt` containing:
-```
-Main-Class: ExpenseTracker
-```
-(make sure there is a newline at the end of the file)
-3. Create JAR:
-```bash
-jar cfm ExpenseTracker.jar manifest.txt ExpenseTracker.class
-```
-4. Run:
-```bash
-java -jar ExpenseTracker.jar
-```
-
----
-
-## Notes & Tips
-- `expenses.txt` is created in the same folder when you add the first expense.
-- If you prefer, edit `expenses.txt` manually (follow CSV format).
-- To take a screenshot of your working output, run the program, show the menu and some sample data, then take a screenshot and include it in your project upload.
-
----
-
-## Possible improvements (if you have more time)
-- Add validation for date format (YYYY-MM-DD)
-- Save data in JSON or a small SQLite DB
-- Add 'delete expense' or 'edit expense' feature
-- Create a simple Swing or JavaFX GUI
-- Add monthly or date-range reports
